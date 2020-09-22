@@ -16,8 +16,9 @@ namespace PubBase.Models
         protected override void OnModelCreating(ModelBuilder builder)
         {
             builder.Entity<Pub>().HasData(
-                new Pub { Id = 1, Name = "Svah", Municipality = "Liberec" });
-                new Pub { Id = 2, Name = "Techtle", Municipality = "Jablonec nad Jablonec" };
+                new Pub { Id = 1, Name = "Svah", Municipality = "Liberec" },
+                new Pub { Id = 2, Name = "Techtle", Municipality = "Jablonec nad Jablonec" }
+            );
         }
     }
 }
